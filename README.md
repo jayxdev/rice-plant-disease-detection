@@ -20,9 +20,13 @@ An automated system for detecting rice plant diseases using image processing and
 
 Agriculture is a primary source of income in many countries worldwide. Given its importance, farmers meticulously select crops and implement appropriate measures, including pesticide use, to enhance plant growth within limited timeframes. Rice, a staple food crop in numerous nations, faces significant challenges due to diseases that adversely impact both the quality and quantity of yields. Factors such as a shortage of agricultural experts, inadequate knowledge in fertilizer management, and limited awareness of diseases and pests contribute to reduced production rates.
 
+![Rice Field](images/rice-field.jpg)
+
 Plant diseases not only directly harm crop yield but also indirectly contribute to environmental damage. Globally spreading diseases disrupt plant functioning and substantially diminish crop numbers, thereby affecting financial stability. Rice plants are susceptible to various bacterial and fungal diseases, including Sheath Blight, NBSD Leaf Blast, and Brown Spot, each varying in severity.
 
 **Brown Spot** is caused by the Bipolaris oryzae fungus and is prevalent throughout the growing season, especially in silicon-deficient soils, leading to significant crop damage. In Asia alone, 10 to 15% of rice production is lost due to diseases. Traditional disease analysis and monitoring methods, relying on manual inspection by farming experts, are time-consuming and labor-intensive. Timely disease detection is crucial, as delays can result in crop failures.
+
+![Brown Spot Disease](images/brown-spot.jpg)
 
 To address this, automated systems utilizing image processing and machine learning (ML) algorithms have been developed to diagnose rice plant diseases. The accuracy of disease identification hinges on three key processes: feature segmentation, feature extraction, and classification algorithms. Deep learning techniques have shown promising results in image classification tasks, including disease identification.
 
@@ -38,6 +42,8 @@ Machine learning-based plant disease detection, particularly focusing on rice pl
 
 2. **Model Architectures**: Convolutional Neural Networks (CNNs) emerge as the predominant choice for disease detection tasks due to their ability to learn intricate patterns from image data. Researchers explore different CNN architectures, including variants like ResNet, VGG, and DenseNet, to improve accuracy and efficiency.
 
+![CNN Architectures](images/cnn-architectures.png)
+
 3. **Feature Extraction and Representation**: Feature extraction plays a crucial role in capturing discriminative characteristics from input images. Studies investigate various feature extraction techniques, such as transfer learning and feature fusion, to enhance model performance. Additionally, attention mechanisms are explored to focus on relevant regions within images, improving disease detection accuracy.
 
 4. **Challenges and Solutions**: Challenges in disease detection include variations in environmental conditions, disease progression stages, and image quality. Researchers propose solutions like data augmentation, domain adaptation, and ensemble learning to address these challenges and improve model robustness.
@@ -45,6 +51,8 @@ Machine learning-based plant disease detection, particularly focusing on rice pl
 5. **Real-Time Detection**: With the increasing demand for real-time monitoring in agriculture, researchers explore methods for deploying trained models on edge devices. Techniques such as model quantization, lightweight architectures, and hardware acceleration enable efficient inference on resource-constrained platforms, facilitating on-site disease detection.
 
 6. **Integration with Agricultural Systems**: Studies emphasize the integration of disease detection systems with existing agricultural technologies to provide farmers with user-friendly tools for decision-making. Mobile applications, web-based interfaces, and IoT platforms are explored for seamless deployment and adoption in agricultural settings.
+
+![Mobile App](images/mobile-app.png)
 
 7. **Future Directions**: Future research directions include the development of multi-modal approaches combining image and sensor data for comprehensive plant health assessment. Additionally, efforts are directed towards addressing challenges in disease localization and quantification, advancing towards precise and automated disease management solutions.
 
@@ -85,6 +93,8 @@ Upon satisfactory performance, deploy the model for practical use. This could in
 ## Results and Discussion
 
 The model exhibits proficiency in predicting diseases like 'Bacterial leaf blight,' 'Brown spot,' and 'Leaf smut' in plants, achieving an overall performance accuracy of 99.98%. This indicates its effectiveness in detecting rice plant diseases.
+
+![Model Performance](images/model-performance.png)
 
 Challenges persist, particularly in accurately identifying diseases with subtle symptoms or variations. Further refinement of the model is warranted to address these nuances.
 
