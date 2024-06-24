@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Plant Disease Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Rice Plant Disease Detection</h1>
+        <input type="file" id="uploadInput" accept="image/*">
+        <button id="classifyBtn">Classify</button>
+        <div id="imageContainer"></div>
+        <div id="resultContainer"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#classifyBtn').on('click', function() {
+                var fileInput = document.getElementById('uploadInput');
+                var file = fileInput.files[0];
+                if (file) {
+                    var formData = new FormData();
+                    formData.append('image', file);
+
+                    $.ajax({
+                        url: '/', // Replace with your backend API endpoint
+                        type: 'POST',
+                        data: formData,
+                        contentType: false,
+                        processData: false,
+                        success: function(response) {
+                            displayImage(file);
+                            displayResult(response);
+                        },
+                        error: function(xhr, status, error) {
+                            alert('Error: ' + error);
+                        }
+                    });
+                } else {
+                    alert('Please select an image to classify.');
+                }
+            });
+
+            function displayImage(file) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    $('#imageContainer').html('<img src="' + e.target.result + '" alt="Uploaded Image">');
+                }
+                reader.readAsDataURL(file);
+            }
+
+            function displayResult(result) {
+                $('#resultContainer').html('<p><strong>Classification Result:</strong> ' + result + '</p>');
+            }
+        });
+    </script>
+</body>
+</html>
