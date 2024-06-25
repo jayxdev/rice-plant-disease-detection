@@ -5,7 +5,7 @@ An automated system for detecting rice plant diseases using image processing and
 # Installation Guide
 
 ## Overview
-This guide provides step-by-step instructions to set up and install the Automated Rice Plant Disease Detection project. This project uses image processing and machine learning techniques to detect diseases in rice plants, with an integrated mobile application for real-time diagnosis.
+This guide provides step-by-step instructions to set up and install the Automated Rice Plant Disease Detection project. This project uses image processing and machine learning techniques to detect diseases in rice plants, with an integrated web application for real-time diagnosis.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
