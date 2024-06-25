@@ -23,11 +23,11 @@ This guide provides step-by-step instructions to set up and install the Automate
 ### Clone the Repository
 First, clone the repository to your local machine:
 ```sh
-git clone https://github.com/yourusername/rice-plant-disease-detection.git
+git clone https://github.com/jayxdev/rice-plant-disease-detection-system.git
 ```
 Navigate to the project directory:
 ```sh
-cd rice-plant-disease-detection
+cd rice-plant-disease-detection-system
 ```
 
 ### Environment Setup
@@ -52,7 +52,7 @@ By following this guide, you will have set up the Automated Rice Plant Disease D
 
 ---
 
-## Documentation
+# Documentation
 
 - [Introduction](#introduction)
 - [Literary Survey](#literary-survey)
