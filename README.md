@@ -52,6 +52,7 @@ By following this guide, you will have set up the Automated Rice Plant Disease D
 
 ---
 
+
 # Documentation
 
 - [Introduction](#introduction)
