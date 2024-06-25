@@ -13,7 +13,7 @@ This guide provides step-by-step instructions to set up and install the Automate
 - [Environment Setup](#environment-setup)
 - [Install Dependencies](#install-dependencies)
 - [Run Web-App](#run-web-app)
-
+- [Documentation](#documentation)
 
 ### Prerequisites
 - Python 3.7 or higher
@@ -48,13 +48,11 @@ Launch the Web App:
 ```sh
 python frontend/main.py
 ```
-
-## Conclusion
 By following this guide, you will have set up the Automated Rice Plant Disease Detection project, including the machine learning model and the Web application for real-time use. For further details on using the application and interpreting results, refer to the further README file.
 
 ---
 
-## Table of Contents
+## Documentation
 
 - [Introduction](#introduction)
 - [Literary Survey](#literary-survey)
