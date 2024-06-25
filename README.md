@@ -2,6 +2,56 @@
 
 An automated system for detecting rice plant diseases using image processing and machine learning to improve agricultural productivity.
 
+# Installation Guide
+
+## Overview
+This guide provides step-by-step instructions to set up and install the Automated Rice Plant Disease Detection project. This project uses image processing and machine learning techniques to detect diseases in rice plants, with an integrated mobile application for real-time diagnosis.
+
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Clone the Repository](#clone-the-repository)
+- [Environment Setup](#environment-setup)
+- [Install Dependencies](#install-dependencies)
+- [Run Web-App](#run-web-app)
+
+
+### Prerequisites
+- Python 3.7 or higher
+- pip (Python package installer)
+- Git
+
+### Clone the Repository
+First, clone the repository to your local machine:
+```sh
+git clone https://github.com/yourusername/rice-plant-disease-detection.git
+```
+Navigate to the project directory:
+```sh
+cd rice-plant-disease-detection
+```
+
+### Environment Setup
+It is recommended to create a virtual environment to manage dependencies:
+```sh
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
+
+### Install Dependencies
+Install the required Python packages:
+```sh
+pip install -r requirements.txt
+```
+
+### Run Web App
+Launch the Web App:
+```sh
+python frontend/main.py
+```
+
+## Conclusion
+By following this guide, you will have set up the Automated Rice Plant Disease Detection project, including the machine learning model and the Web application for real-time use. For further details on using the application and interpreting results, refer to the further README file.
+
 ---
 
 ## Table of Contents
