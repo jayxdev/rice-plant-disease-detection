@@ -42,16 +42,32 @@ if uploaded_file is not None:
     # Display the uploaded image with a fixed width
     img = Image.open(uploaded_file)
     
-    # Create two columns
-    col1, col2 = st.columns(2)
+    # Create two columns with custom widths
+    col1, col2 = st.columns([1, 1])
 
     with col1:
         st.image(img, caption='Uploaded Image', use_column_width=True)
     
     with col2:
-        # Perform prediction
+        st.write("## Classification Result:")
         result = predict_image(img)
-        
-        # Display the result
-        st.write("Classification Result:")
-        st.write(f"**{result}**")
+        st.write(f"### **{result}**")
+
+# Add custom CSS to center-align the text
+st.markdown(
+    """
+    <style>
+    .stImage {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .stText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
