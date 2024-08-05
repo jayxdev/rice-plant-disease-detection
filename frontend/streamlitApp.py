@@ -39,12 +39,19 @@ st.title("Rice Plant Disease Detection")
 uploaded_file = st.file_uploader("Choose an image of the rice plant", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
-    # Display the uploaded image
+    # Display the uploaded image with a fixed width
     img = Image.open(uploaded_file)
-    st.image(img, caption='Uploaded Image', width=300)
     
-    # Perform prediction
-    result = predict_image(img)
+    # Create two columns
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.image(img, caption='Uploaded Image', use_column_width=True)
     
-    # Display the result
-    st.write("Classification Result:", result)
+    with col2:
+        # Perform prediction
+        result = predict_image(img)
+        
+        # Display the result
+        st.write("Classification Result:")
+        st.write(f"**{result}**")
