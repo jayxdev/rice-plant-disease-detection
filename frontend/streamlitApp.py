@@ -9,8 +9,11 @@ from PIL import Image
 # Disable TensorFlow warnings
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
+# Ensure the model file is in the same directory as this script
+model_path = os.path.join(os.path.dirname(__file__), 'riceplantdetectionmodel.h5')
+
 # Load your TensorFlow model
-model = load_model('riceplantdetectionmodel.h5')
+model = load_model(model_path)
 
 # Define a function to preprocess and predict the image
 def predict_image(img):
